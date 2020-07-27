@@ -24,7 +24,7 @@ for instructions.
 3. Build and run the sample apps, visit [apps readme](./workspace/README.md) for instructions.
 
 ## Maintainers
-This project is mantained by:
+This repository is mantained by:
 * [Javier Balloffet](http://github.com/jballoffet)
 
 ## Original version
