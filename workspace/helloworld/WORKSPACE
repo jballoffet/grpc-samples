@@ -22,9 +22,9 @@ rules_proto_toolchains()
 http_archive(
     name = "com_github_grpc_grpc",
     urls = [
-        "https://github.com/grpc/grpc/archive/de6defa6fff08de20e36f9168f5b277e292daf46.tar.gz",
+        "https://github.com/grpc/grpc/archive/7d89dbb311f049b43bda7bbf6f7d7bf1b4c24419.tar.gz",
     ],
-    strip_prefix = "grpc-de6defa6fff08de20e36f9168f5b277e292daf46",
+    strip_prefix = "grpc-7d89dbb311f049b43bda7bbf6f7d7bf1b4c24419",
 )
 load("@com_github_grpc_grpc//bazel:grpc_deps.bzl", "grpc_deps")
 grpc_deps()
