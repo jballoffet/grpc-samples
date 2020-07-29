@@ -32,7 +32,4 @@
 *.app
 
 # Bazel files
-bazel-bin
-bazel-out
-bazel-testlogs
-bazel-helloworld
+bazel-*
