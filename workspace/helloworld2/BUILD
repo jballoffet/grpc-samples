@@ -21,7 +21,7 @@ load("@com_github_grpc_grpc//bazel:cc_grpc_library.bzl", "cc_grpc_library")
 load("@com_github_grpc_grpc//bazel:grpc_build_system.bzl", "grpc_proto_library")
 
 grpc_proto_library(
-    name = "helloworld_proto",
+    name = "helloworld_grpc",
     srcs = ["helloworld.proto"],
 )
 
@@ -30,7 +30,7 @@ cc_binary(
     srcs = ["greeter_client.cc"],
     defines = ["BAZEL_BUILD"],
     deps = [
-        ":helloworld_proto",
+        ":helloworld_grpc",
         "@com_github_grpc_grpc//:grpc++",
     ],
 )
@@ -40,7 +40,7 @@ cc_binary(
     srcs = ["greeter_server.cc"],
     defines = ["BAZEL_BUILD"],
     deps = [
-        ":helloworld_proto",
+        ":helloworld_grpc",
         "@com_github_grpc_grpc//:grpc++",
         "@com_github_grpc_grpc//:grpc++_reflection",
     ],
