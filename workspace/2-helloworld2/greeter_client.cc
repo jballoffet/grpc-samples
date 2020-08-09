@@ -75,9 +75,8 @@ class GreeterClient {
 };
 
 int main(int argc, char** argv) {
-  std::string target_str("localhost:50051");
   GreeterClient greeter(grpc::CreateChannel(
-      target_str, grpc::InsecureChannelCredentials()));
+      "localhost:50051", grpc::InsecureChannelCredentials()));
   std::string user("world");
 
   std::string reply = greeter.SayHello(user);
