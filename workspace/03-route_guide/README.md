@@ -1,19 +1,19 @@
-# Load Balancing sample app
+# Route Guide sample app
 
 ## Building
 To build the application, taking `{REPO_PATH}` as the base repository path, run the following:
 
 ```bash
-cd `{REPO_PATH}`/workspace/5-load_balancing
-bazel build :greeter_server
-bazel build :greeter_client
+cd `{REPO_PATH}`/workspace/03-route_guide
+bazel build :route_guide_server
+bazel build :route_guide_client
 ```
 
 ## Running
 To run the application, taking `{REPO_PATH}` as the base repository path, run the following:
 
 ```bash
-cd `{REPO_PATH}`/workspace/5-load_balancing
-bazel run :greeter_server
-bazel run :greeter_client
+cd `{REPO_PATH}`/workspace/03-route_guide
+bazel run :route_guide_server
+bazel run :route_guide_client
 ```
